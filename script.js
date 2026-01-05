@@ -35,16 +35,16 @@ if (hasilBox) {
   const skor = Number(localStorage.getItem("skorPostur"));
 
   let status = "Berisiko";
-  let saran = "Segera perbaiki postur duduk.";
+  let saran = "Segera perbaiki postur duduk.(Lihat di menu Panduan Ergonomi)";
   let img = "beresiko.jpg";
 
   if (skor <= 1) {
     status = "Baik";
-    saran = "Pertahankan postur yang sudah benar.";
+    saran = "Pertahankan postur yang sudah benar.(Untuk panduan agar lebih baik bisa dilihat di menu Panduan Ergonomi ya)";
     img = "baik.jpg";
   } else if (skor <= 3) {
     status = "Perlu Perbaikan";
-    saran = "Sesuaikan posisi duduk dan workstation.";
+    saran = "Sesuaikan posisi duduk dan workstation.(Lihat di menu Panduan Ergonomi)";
     img = "perluperbaikan.jpg";
   }
 
